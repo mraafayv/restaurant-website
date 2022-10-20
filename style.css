@@ -20,6 +20,10 @@ body {
 }
 
 
+.feedback-container:hover {
+
+}
+
 /* Header Section
 =====================
  */
@@ -105,6 +109,7 @@ body {
     /* height: 100vh; */
     height: fit-content;
     overflow: hidden;
+    padding-bottom: 80px;
  }
 
 .headings {
@@ -181,14 +186,11 @@ body {
 .image-container img {
     width: 100%;
     border-radius: 12px;
-    
-}
-
-img {
     vertical-align: middle;
     min-width: 100%;
-    
 }
+
+
 
 
 .image-container h3 {
@@ -232,12 +234,55 @@ img {
 
  .menu {
     background-color: #0c1023;
-    height: 100vh;
+    height: fit-content;
  }
 
+ .menu .headings {
+    padding-top: 80px;
+    padding-bottom: 40px;
+ }
+
+ .menu-categories {
+    margin-top: 28px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap: 24px;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.menu-categories div:first-child {
+    color: #eaa023;
+}
+
+.item {
+    /* margin: 8px; */
+    /* padding-top: 16px; */
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    /* justify-content: space-between; */
+    position: relative;
+    border-bottom: 1px dashed rgba(95, 95, 95, 0.558)
+}
+
+.item img{
+    width: 72px;
+    height: 72px;
+}
 
 
+.item-name {
+    left: 0;
+    color: white;
+}
 
+.item-price {
+    color: #eaa023;
+    margin-left: auto;
+}
 
  /* FeedBack Section
 =======================
@@ -245,17 +290,63 @@ img {
 
  .feedback {
     background-color: #0c1023;
-    height: 100vh;
+    height: fit-content;
+    margin: auto;
+    padding: 16px;
  }
 
+
+ .feedback .headings {
+    padding-top: 80px;
+    padding-bottom: 80px;
+ }
+
+ .feedback-container {
+    border-radius: 12px;
+    padding: 32px;
+    border: 1px solid #c4c4c467;
+    height: fit-content;
+    width: 100%;
+    margin-top: 28px;
+ }
+
+
+.fb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fb-header .username {
+    color: white;
+    font-weight: 600;
+}
+
+.fb-header .user-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 3px solid #eaa023;
+}
+
+.fb-body .review {
+    color: #c8c8c8;
+    max-width: 90%;
+    margin: 15px 0;
+}
+
+.fb-body .ratings {
+    color: #eaa023;
+}
 
  /* Chefs Section
 =======================
  */
 
- .chef {
+ .chefs {
+    padding-top: 64px;
     background-color: #0c1023;
-    height: 100vh;
+    height: fit-content;
  }
 
 
