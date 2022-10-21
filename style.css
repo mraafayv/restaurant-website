@@ -7,7 +7,7 @@
 body {
     font-family: 'Dancing Script', cursive;
     font-family: 'Poppins', sans-serif;
-    
+
 }
 
 /* Hover Effects
@@ -20,8 +20,14 @@ body {
 }
 
 
-.feedback-container:hover {
+.feedback-container:hover .user-image {
+    border: 3px solid #eaa023;
 
+}
+
+
+.footer-details i:hover {
+    color: #eaa023;
 }
 
 /* Header Section
@@ -29,7 +35,7 @@ body {
  */
 
 
- .header {
+.header {
     position: fixed;
 }
 
@@ -63,16 +69,16 @@ body {
 =======================
  */
 
- .home {
+.home {
     height: 100vh;
     /* background: url(https://supershinwarirest.web.app/img/home-bg.jpg);
     background-position: center;*/
     background: linear-gradient(to left, #0e0d0db2, #0000009c), url(https://supershinwarirest.web.app/img/home-bg.jpg) no-repeat top center;
-    background-size: cover; 
-    
- }
+    background-size: cover;
 
- .home .home-text {
+}
+
+.home .home-text {
     width: 100%;
     text-align: center;
     position: absolute;
@@ -89,7 +95,7 @@ body {
     font-weight: 700;
     margin-bottom: 16px;
 }
- 
+
 .home-text p {
     font-family: 'Poppins', sans-serif;
     color: #c8c8c8;
@@ -100,36 +106,36 @@ body {
 
 
 
- /* About Section
+/* About Section
 =======================
  */
 
- .about {
+.about {
     background-color: #0c1023;
     /* height: 100vh; */
     height: fit-content;
     overflow: hidden;
     padding-bottom: 80px;
- }
+}
 
 .headings {
     text-align: center;
     padding-top: 40px;
 }
 
- .headings h3 {
-    font-family: 'Dancing Script', cursive;    
+.headings h3 {
+    font-family: 'Dancing Script', cursive;
     color: #eaa023;
     font-size: 24px;
     font-weight: 200;
- }
+}
 
- .headings h1 {
-    font-family: 'Poppins', sans-serif;    
+.headings h1 {
+    font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 36px;
     font-weight: 600;
- }
+}
 
 .about-info {
     padding: 80px 0 0 0;
@@ -142,18 +148,18 @@ body {
     padding: 0 16px;
     margin-bottom: 24px;
 }
- 
+
 .about-info h2 {
     color: white;
     font-size: 32px;
     font-weight: 500;
     line-height: 1.3em
- }
+}
 
- .about-info p {
+.about-info p {
     color: #c8c8c8;
-    
- }
+
+}
 
 .home-text .btn,
 .about-info .btn {
@@ -219,6 +225,7 @@ body {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -228,21 +235,21 @@ body {
 
 
 
- /* Menu Section
+/* Menu Section
 =======================
  */
 
- .menu {
+.menu {
     background-color: #0c1023;
     height: fit-content;
- }
+}
 
- .menu .headings {
+.menu .headings {
     padding-top: 80px;
     padding-bottom: 40px;
- }
+}
 
- .menu-categories {
+.menu-categories {
     margin-top: 28px;
     display: flex;
     color: white;
@@ -268,7 +275,7 @@ body {
     border-bottom: 1px dashed rgba(95, 95, 95, 0.558)
 }
 
-.item img{
+.item img {
     width: 72px;
     height: 72px;
 }
@@ -284,31 +291,31 @@ body {
     margin-left: auto;
 }
 
- /* FeedBack Section
+/* FeedBack Section
 =======================
  */
 
- .feedback {
+.feedback {
     background-color: #0c1023;
     height: fit-content;
     margin: auto;
     padding: 16px;
- }
+}
 
 
- .feedback .headings {
+.feedback .headings {
     padding-top: 80px;
-    padding-bottom: 80px;
- }
+    padding-bottom: 40px;
+}
 
- .feedback-container {
+.feedback-container {
     border-radius: 12px;
     padding: 32px;
-    border: 1px solid #c4c4c467;
+    border: 1px solid #857a7a67;
     height: fit-content;
     width: 100%;
     margin-top: 28px;
- }
+}
 
 
 .fb-header {
@@ -323,10 +330,13 @@ body {
 }
 
 .fb-header .user-image {
-    width: 64px;
-    height: 64px;
+    max-width: 64px;
+    max-height: 64px;
     border-radius: 50%;
-    border: 3px solid #eaa023;
+    object-fit: none;
+    border: 3px solid #191f3a;
+    transition: border 0.5s ease;
+
 }
 
 .fb-body .review {
@@ -339,22 +349,126 @@ body {
     color: #eaa023;
 }
 
- /* Chefs Section
+/* Chefs Section
 =======================
  */
 
- .chefs {
+.team-section {
     padding-top: 64px;
     background-color: #0c1023;
     height: fit-content;
- }
+}
+
+.team-container {
+    margin-top: 80px;
+    /* margin: auto; */
+    /* display: flex; */
+    padding: 16px;
+    justify-content: center;
+}
+
+
+
+.chef-info {
+    margin: auto;
+    width: 80%;
+    /* border: 3px solid gray; */
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #191f3a;
+    transform: translateY(-40%);
+    line-height: 2em;
+}
+
+
+.chef-info h4 {
+    color: white;
+    font-size: 18px;
+}
+
+.chef-info p {
+    color: #c8c8c8;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+
+.chef {
+    margin: 0 0 16px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chef img {
+    border-radius: 8px;
+}
+
+
+
+
+/* Footer Section
+==========================
+ */
+
+
+.footer-image{
+    /* position: absolute; */
+    width: 100%;
+    background: linear-gradient(to left, #0e0d0db2, #0000009c), url(https://supershinwarirest.web.app/img/about-img.jpg) no-repeat top center;
+
+    height: fit-content;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+.footer-details {
+    padding: 16px 0 16px 0;
+    /* display: flex;     */
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.footer-details i {
+    font-size: 24px;
+    padding: 8px;
+    color: #c8c8c8;
+    transition: color 0.5s ease;
+}
+
+.footer-details h3 {
+    color: white;
+    line-height: 2.5em;
+}
+
+.footer-details p{
+    word-wrap: unset;
+    color: #c8c8c8;
+}
+
+.footer .copyright {
+    margin: 80px 0 0;
+    width: 100%;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 14px;
+    border-top: 1px solid #c8c8c8;
+    color: #c8c8c8;
+    /* bottom: 0; */
+}
 
 
 
 
 
 
- /* Media Queries
+
+/* Media Queries
  ==========================
   */
 
@@ -364,7 +478,7 @@ body {
 
 
 
-    
+
     .about-content {
         /* width: fit-content;  */
         margin: auto;
@@ -379,7 +493,7 @@ body {
         height: 100%;
         float: left;
     }
-    
+
 
     .about-image .image-container {
         display: inline-block;
@@ -389,18 +503,98 @@ body {
 
     }
 
+
+    .menu-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+    
+
+    .feedback-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+
+    .team-container {
+        display: flex;
+        gap: 32px;
+        /* padding-bottom: 40px; */
+    }
+
+    .chef:hover .chef-info {
+        transform: translateY(-125%);
+        color: white;
+        background-color: #eaa023;
+        transition: background-color, transform 0.5s ease;
+    }
+
+    .footer-image {
+        height: 70vh;
+    }
+
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
 }
 
 
 
-  /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
 
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
+@media only screen and (min-width: 1200px) {}
