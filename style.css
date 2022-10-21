@@ -37,6 +37,7 @@ body {
 
 .header {
     position: fixed;
+    z-index:20;
 }
 
 .container {
@@ -45,6 +46,7 @@ body {
     justify-content: space-between;
     padding: 16px 24px 0 16px;
     width: 100vw;
+    background-color: #191f3a;
     /* padding: 16px; */
 }
 
