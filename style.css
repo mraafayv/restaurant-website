@@ -315,6 +315,7 @@ body {
     height: fit-content;
     width: 100%;
     margin-top: 28px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
 }
 
 
@@ -380,6 +381,8 @@ body {
     background-color: #191f3a;
     transform: translateY(-40%);
     line-height: 2em;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+
 }
 
 
@@ -404,6 +407,8 @@ body {
 
 .chef img {
     border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+
 }
 
 
