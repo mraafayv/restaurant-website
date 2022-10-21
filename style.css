@@ -439,6 +439,7 @@ body {
     padding: 8px;
     color: #c8c8c8;
     transition: color 0.5s ease;
+    line-height: 2.5em;
 }
 
 .footer-details h3 {
@@ -538,6 +539,16 @@ body {
         height: 70vh;
     }
 
+    .footer-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-details {
+        margin: 0;
+        align-items: center;
+        padding-top: 96px;
+    }
 
     .col-1 {
         width: 8.33%;
